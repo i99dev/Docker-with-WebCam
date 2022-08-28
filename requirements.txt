@@ -1,0 +1,18 @@
+tensorflow
+ipykernel
+pandas
+numpy
+autopep8
+matplotlib
+tensorflow_datasets
+nbconvert
+Pillow
+pyyaml
+h5py
+seaborn
+scikit-learn
+# need your key to use this package (https://github.com/Kaggle/kaggle-api)
+kaggle 
+opencv-python
+ffmpeg
+
