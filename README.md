@@ -78,7 +78,8 @@ Add parameter to the command to stream the camera:
         ],
     }
     ```
-- when run docker
+- `Or` when run docker container from cmd
+    
     ```shell
     docker run -ti -p 1235:1235/udp -e DISPLAY=<localhostIP>:0.0 vscode
     ```
@@ -89,5 +90,30 @@ Add parameter to the command to stream the camera:
     - e: to specify the environment variable
     - DISPLAY: to specify the display `ip:port` this one you will be your Ip on network you are work on.
  
+ - Make sure you insall all this librarys , check [Docker](.devcontainer/Dockerfile) file:
+ 
+ ```
+     gcc g++ \
+    libavcodec-dev \
+    libswscale-dev \
+    libavformat-dev \
+    libgstreamer-plugins-base1.0-dev \
+    libgstreamer1.0-dev \
+    libpng-dev \
+    libopencv-dev \
+    libjpeg-dev \
+    libopenexr-dev \
+    libtiff-dev \
+    libwebp-dev \
+    wget \
+    qtbase5-dev \
+    qtchooser \
+    qt5-qmake \
+    qtbase5-dev-tools \
+    libtbb-dev \
+    libgphoto2-dev \
+    ffmpeg \
+    usbutils \
+```
 
 
