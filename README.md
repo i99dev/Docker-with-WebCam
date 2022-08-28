@@ -58,16 +58,19 @@ Now Move to step [Docker Container Configuration](#docker-container-configuratio
 
 
 ## MAC.
-
-Maybe this shell will help, I have used it before with my Mac.
-
-Until I update, please try to use this after you install FFmpeg and x11 and follow all setup, and next run this cmd on your Mac to stream cam.
-
-```shell
-ffmpeg -f avfoundation -framerate 10  -i "<Camera name>"  -preset ultrafast -vcodec libx264 -tune zerolatency -b 900k -f mpegts udp://127.0.0.1:<port>
-```
- 
-
+> you need usb cam bulit-in cam not supported!--> 😡
+- install `ffmpeg` using `brew`:
+    - `brew install ffmpeg`
+- install xquartz:
+    - `brew cask install xquartz`
+- list cam device
+    ```
+    ffmpeg -list_devices true -f avfoundation -i dummy
+    ```
+- Stream cam
+    ```shell
+    ffmpeg -f avfoundation -framerate 10  -i "<Camera name>"  -preset ultrafast -vcodec libx264 -tune zerolatency -b 900k -f mpegts udp://127.0.0.1:<port>
+    ```
 
 ## <a name="docker-container-configuration"></a> Docker Container Configuration
 
