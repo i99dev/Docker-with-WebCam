@@ -58,8 +58,13 @@ Now Move to step [Docker Container Configuration](#docker-container-configuratio
 
 
 ## MAC.
-- [ ] TO DO 🚧
 
+maybe this shell will help i use it from long time with my mac till i update please trying use this after you install ffmpeg and x11 and follow all setup , and next run this cmd on your mac to stream cam
+
+```shell
+ffmpeg -f avfoundation -framerate 10  -i "<Camera name>"  -preset ultrafast -vcodec libx264 -tune zerolatency -b 900k -f mpegts udp://127.0.0.1:<port>
+```
+ 
 
 
 ## <a name="docker-container-configuration"></a> Docker Container Configuration
