@@ -1,5 +1,5 @@
 # Docker with Webcam
-The purpose of this repository is to represent the webcam and docker.
+The purpose of this repository is to represent How webcam,docker and opencv-python work together [main.py](./python/main.py).
 
 I do it for a project I am working on it to show how to use docker to run a camera for different purposes.
 
