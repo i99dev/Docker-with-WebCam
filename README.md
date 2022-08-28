@@ -1,4 +1,4 @@
-# WebCam and Docker
+# Docker with Webcam
 The purpose of this repository is to represent the webcam and docker.
 
 I do it for a project I am working on it to show how to use docker to run a camera for different purposes.
